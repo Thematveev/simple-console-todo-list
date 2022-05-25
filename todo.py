@@ -10,4 +10,10 @@ class TodoList:
     def remove_task(self, index):
         self.tasks.pop(index - 1)
 
+    def draw_tasks(self):
+        n = 1
+        for tsk in self.tasks:
+            print(f"{n}: {tsk}")
+            n += 1
+
 
